@@ -66,6 +66,8 @@ button.addEventListener('click', async (event) => {
         // TODO how should this list be determined?
         // https://developer.mozilla.org/en-US/docs/Web/API/PublicKeyCredentialCreationOptions/pubKeyCredParams suggests ES256 (-7) and RS256 (-257) but then provides an example with -7 (ES256) and -37 (PS256)
         { type: 'public-key', alg: -7 }, // ES256 = -7
+        // { type: 'public-key', alg: -257 },
+        // { type: 'public-key', alg: -37 },
       ],
       attestation: 'none', // one of ['none', 'indirect', 'direct']
     };
